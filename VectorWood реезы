@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Столярная мастерская</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">WoodCraft</h1>
+            <nav class="nav">
+                <a href="#about">О нас</a>
+                <a href="#products">Изделия</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Уникальные изделия из массива дерева</h2>
+            <p>Создаем торцевые разделочные доски, органайзеры и кастомную мебель ручной работы.</p>
+            <a href="#products" class="btn">Смотреть работы</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Наши направления</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Торцевые доски</h3>
+                    <p>Надежные и долговечные разделочные доски с правильным направлением волокон. Идеальны для работы на кухне.</p>
+                </div>
+                <div class="card">
+                    <h3>Техника Shou Sugi Ban</h3>
+                    <p>Изделия, обработанные традиционным японским методом обжига древесины для надежной защиты и фактурного внешнего вида.</p>
+                </div>
+                <div class="card">
+                    <h3>Кастомные проекты</h3>
+                    <p>Проектирование и создание деревянных органайзеров и мебели по индивидуальным чертежам и размерам.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <p>Готовы обсудить ваш проект или заказ? Напишите нам!</p>
+            <div class="contact-info">
+                <p>Email: info@woodcraft.local</p>
+                <p>Telegram: @woodcraft_bot</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
