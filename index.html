@@ -3,44 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Столярная мастерская</title>
+    <title>VectorWood — Мастерская уникальных изделий из массива</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <h1 class="logo">WoodCraft</h1>
+            <h1 class="logo">VEC<span>TOR</span>WOOD</h1>
             <nav class="nav">
-                <a href="#about">О нас</a>
-                <a href="#products">Изделия</a>
-                <a href="#contact">Контакты</a>
+                <a href="#products">Галерея</a>
+                <a href="#about">Процесс</a>
+                <a href="#contact" class="btn-sm">Заказать</a>
             </nav>
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
-            <h2>Уникальные изделия из массива дерева</h2>
-            <p>Создаем торцевые разделочные доски, органайзеры и кастомную мебель ручной работы.</p>
-            <a href="#products" class="btn">Смотреть работы</a>
+            <span class="eyebrow">Мастерская ручной работы</span>
+            <h2>Создаем характер<br>в каждом волокне.</h2>
+            <p>Премиальные торцевые доски, органайзеры и предметы интерьера из ценных пород дерева.</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn">Смотреть изделия</a>
+                <a href="#contact" class="btn btn-outline">Связаться</a>
+            </div>
         </div>
+        <div class="hero-overlay"></div>
     </section>
 
     <section id="products" class="products">
         <div class="container">
-            <h2 class="section-title">Наши направления</h2>
+            <div class="section-header">
+                <span class="section-eyebrow">Наша страсть</span>
+                <h2 class="section-title">Примеры наших работ</h2>
+            </div>
+            
             <div class="grid">
                 <div class="card">
-                    <h3>Торцевые доски</h3>
-                    <p>Надежные и долговечные разделочные доски с правильным направлением волокон. Идеальны для работы на кухне.</p>
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1599901594291-7f93af0026e6?q=80&w=600&auto=format&fit=crop" alt="Торцевая разделочная доска" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Люкс доска "Дубовый градиент"</h3>
+                        <p>Надежная торцевая конструкция с уникальным геометрическим узором. Финиш: воск.</p>
+                        <div class="card-footer">
+                            <span class="price">от 7 500 ₽</span>
+                            <a href="#contact" class="btn-card">Заказать</a>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="card">
-                    <h3>Техника Shou Sugi Ban</h3>
-                    <p>Изделия, обработанные традиционным японским методом обжига древесины для надежной защиты и фактурного внешнего вида.</p>
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1620138927896-1c88d89b9426?q=80&w=600&auto=format&fit=crop" alt="Изделие в технике обжига" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Сет "Карамельный обжиг"</h3>
+                        <p>Органайзеры, обработанные традиционным методом Shou Sugi Ban. Глубокая фактура.</p>
+                        <div class="card-footer">
+                            <span class="price">от 4 200 ₽</span>
+                            <a href="#contact" class="btn-card">Заказать</a>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="card">
-                    <h3>Кастомные проекты</h3>
-                    <p>Проектирование и создание деревянных органайзеров и мебели по индивидуальным чертежам и размерам.</p>
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1622323285499-28f0f04c7849?q=80&w=600&auto=format&fit=crop" alt="Кастомная мебель" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Индивидуальный проект №42</h3>
+                        <p>Пример органайзера для рабочего места, спроектированного по чертежам клиента.</p>
+                        <div class="card-footer">
+                            <span class="price">Цена по запросу</span>
+                            <a href="#contact" class="btn-card">Заказать</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,12 +89,17 @@
 
     <footer id="contact" class="footer">
         <div class="container">
-            <h2>Свяжитесь с нами</h2>
-            <p>Готовы обсудить ваш проект или заказ? Напишите нам!</p>
-            <div class="contact-info">
-                <p>Email: info@woodcraft.local</p>
-                <p>Telegram: @woodcraft_bot</p>
+            <div class="footer-content">
+                <h2>Готовы к новому проекту?</h2>
+                <p>Напишите нам, чтобы обсудить идею, узнать цену или заказать изделие из галереи.</p>
+                <div class="contact-methods">
+                    <a href="mailto:info@vectorwood.local" class="contact-link">📧 info@vectorwood.local</a>
+                    <a href="https://t.me/your_tg_bot" class="contact-link btn">Написать в Telegram</a>
+                </div>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VECTORWOOD Workshop. Все права защищены.</p>
         </div>
     </footer>
 </body>
