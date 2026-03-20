@@ -1,0 +1,184 @@
+/* Базовые переменные для удобной смены цветов */
+:root {
+    --primary-color: #2b221e;
+    --accent-color: #d4a373;
+    --text-color: #333333;
+    --bg-color: #f9f6f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка сайта */
+.header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    letter-spacing: 1px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Главный блок (Hero) */
+.hero {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(rgba(43, 34, 30, 0.9), rgba(43, 34, 30, 0.9)); /* Место под фоновую картинку */
+    color: #ffffff;
+    padding: 8rem 0;
+    text-align: center;
+    border-bottom: 5px solid var(--accent-color);
+}
+
+.hero h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    color: #cccccc;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #e5b887;
+    transform: translateY(-2px);
+}
+
+/* Карточки изделий */
+.products {
+    padding: 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.grid {
+    display: grid;
+    /* Автоматическая сетка: на телефонах 1 колонка, на ПК до 3 */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--accent-color);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: #555555;
+    font-size: 0.95rem;
+}
+
+/* Подвал (Контакты) */
+.footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.footer h2 {
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    color: #aaaaaa;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    color: var(--accent-color);
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 600px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .nav a {
+        margin: 0;
+    }
+}
